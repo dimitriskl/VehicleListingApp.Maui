@@ -8,7 +8,7 @@
 
     
 
-<ShellContent Title = "Button" ContentTemplate = "{DataTemplate maui:MainPage}" Route ="ButtonFeatures" /> 
+<ShellContent Title = "Vehicle List" ContentTemplate = "{DataTemplate maui:MainPage}" Route ="ButtonFeatures" /> 
 
 
 </Shell>
