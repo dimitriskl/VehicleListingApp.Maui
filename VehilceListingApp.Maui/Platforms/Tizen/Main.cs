@@ -1,8 +1,9 @@
 using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
+using VehicleListingApp.Maui;
 
-namespace CarListingApp.Maui
+namespace VehicleListingApp.Maui
 {
     internal class Program : MauiApplication
     {

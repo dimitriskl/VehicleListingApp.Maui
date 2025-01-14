@@ -1,7 +1,8 @@
 ﻿using Android.App;
 using Android.Runtime;
+using VehicleListingApp.Maui;
 
-namespace CarListingApp.Maui
+namespace VehicleListingApp.Maui
 {
     [Application]
     public class MainApplication : MauiApplication

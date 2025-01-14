@@ -7,20 +7,27 @@
              x:DataType="viewmodel:VehicleListViewModel"
              x:Class="VehicleListingApp.Maui.MainPage"
              Title="{Binding Title}">
-<Grid ColumnDefinitions="*, *" ColumnSpacing="5" RowDefinitions="*, Auto">
-    <CollectionView Grid.ColumnSpan="2" ItemsSource="{Binding Vehicles}" SelectionMode="None">
-        <CollectionView.ItemTemplate>
-            <DataTemplate x:DataType="model:Vehicle">
-                <Border HeightRequest="90">
-                    <HorizontalStackLayout Padding="10" Spacing="5">
-                        <Label Text="{Binding Name}"></Label>
-                    </HorizontalStackLayout>
-                </Border>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
-    <buttons:SfButton x:Name="SfButton" Text="Load Vehicles" Command="{Binding LoadVehiclesCommand}" IsEnabled="{Binding IsNotLoading}" Grid.Row="1" Grid.Column="0"/>
+    <Grid ColumnDefinitions="*, *" ColumnSpacing="5" RowDefinitions="*, Auto">
+        <RefreshView Grid.ColumnSpan="2" Command="{Binding LoadVehiclesCommand}" IsRefreshing="{Binding IsRefreshing}">
+            <CollectionView ItemsSource="{Binding Vehicles}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Vehicle">
+                        <Grid Padding="10">
+                            <Border HeightRequest="90">
+                                <Border.GestureRecognizers>
+                                    
+                                </Border.GestureRecognizers>
+                                <HorizontalStackLayout Padding="10" Spacing="5">
+                                    <Label Text="{Binding Name}"></Label>
+                                </HorizontalStackLayout>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+        
+        <buttons:SfButton x:Name="SfButton" Text="Load Vehicles" Command="{Binding LoadVehiclesCommand}"
+                          IsEnabled="{Binding IsNotLoading}" Grid.Row="1" Grid.Column="0" Margin="9" />
     </Grid>
-   
-
 </ContentPage>

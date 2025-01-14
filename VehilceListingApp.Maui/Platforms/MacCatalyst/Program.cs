@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace CarListingApp.Maui
+namespace VehicleListingApp.Maui
 {
     public class Program
     {

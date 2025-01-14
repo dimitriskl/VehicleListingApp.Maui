@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using VehicleListingApp.Maui.Models;
 using VehicleListingApp.Maui.Services;
-using VehicleListingApp.Maui.ViewModels.VehicleListingApp.Maui.ViewModels;
 
 namespace VehicleListingApp.Maui.ViewModels
 {
@@ -30,6 +30,10 @@ namespace VehicleListingApp.Maui.ViewModels
             Title = "Vehicle List";
             _vehicleService = vehicleService;
         }
+
+#pragma warning disable MVVMTK0045
+        [ObservableProperty] private bool _isRefreshing = true;
+#pragma warning restore MVVMTK0045
 
         /// <summary>
         /// Command to load the list of vehicles asynchronously.
@@ -64,9 +68,10 @@ namespace VehicleListingApp.Maui.ViewModels
             }
             finally
             {
+                IsRefreshing = false;
                 IsLoading = false;
             }
         }
-}
+    }
 
 }
