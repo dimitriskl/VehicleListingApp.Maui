@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Core.Hosting;
 
-namespace CarListingApp.Maui
+namespace VehicleListingApp.Maui
 {
     public static class MauiProgram
     {

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
              Title="Button"
-             x:Class="CarListingApp.Maui.ButtonFeatures" >
+             x:Class="VehicleListingApp.Maui.ButtonFeatures" >
     <ContentPage.Content>
      <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <buttons:SfButton x:Name="sfButton" Text="Click"/>

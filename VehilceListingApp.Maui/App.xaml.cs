@@ -1,4 +1,4 @@
-﻿namespace CarListingApp.Maui
+﻿namespace VehicleListingApp.Maui
 {
     public partial class App
     {

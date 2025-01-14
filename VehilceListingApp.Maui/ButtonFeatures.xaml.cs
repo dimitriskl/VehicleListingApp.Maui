@@ -1,4 +1,4 @@
-﻿namespace CarListingApp.Maui;
+﻿namespace VehicleListingApp.Maui;
 ///<summary>
 ///ButtonFeatures class
 ///</summary>

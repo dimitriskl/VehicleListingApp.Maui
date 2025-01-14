@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace CarListingApp.Maui.ViewModels
+namespace VehicleListingApp.Maui.ViewModels
 {
     public partial class BaseViewModel : ObservableObject
     {

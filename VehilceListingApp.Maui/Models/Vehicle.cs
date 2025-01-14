@@ -1,9 +1,10 @@
-﻿namespace CarListingApp.Maui.Models;
-
-public class Vehicle : BaseEntity
+﻿namespace VehicleListingApp.Maui.Models
 {
-    public string Name { get; set; }
-    public string Vin { get; set; }
-    public Guid? CarMakeId { get; set; }
-    public VehicleMake? CarMake { get; set; }
+    public class Vehicle : BaseEntity
+    {
+        public string Name { get; set; }
+        public string Vin { get; set; }
+        public Guid? VehicleMakeId { get; set; }
+        public VehicleMake? VehicleMake { get; set; }
+    }
 }

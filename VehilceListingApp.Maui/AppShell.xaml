@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="CarListingApp.Maui.AppShell"
+    x:Class="VehicleListingApp.Maui.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:CarListingApp.Maui"
+    xmlns:local="clr-namespace:VehicleListingApp.Maui"
+    xmlns:maui="clr-namespace:VehicleListingApp.Maui"
     Shell.FlyoutBehavior="Flyout">
 
     
 
-<ShellContent Title = "Button" ContentTemplate = "{DataTemplate local:ButtonFeatures}" Route ="ButtonFeatures" /> 
+<ShellContent Title = "Button" ContentTemplate = "{DataTemplate maui:ButtonFeatures}" Route ="ButtonFeatures" /> 
 
 
 </Shell>

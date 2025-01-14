@@ -1,7 +1,7 @@
-﻿namespace CarListingApp.Maui.Models;
+﻿namespace VehicleListingApp.Maui.Models;
 
 public class VehicleMake : BaseEntity
 {
     public string Name { get; set; }
-    public List<Vehicle> Cars { get; set; }
+    public List<Vehicle> Vehicles { get; set; }
 }
